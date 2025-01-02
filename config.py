@@ -5,21 +5,21 @@ from logging.handlers import RotatingFileHandler
 
 
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "7278442558:AAEphF72HUkKRmmAfSdGlorbUmHrD68F_uo")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "7918144306:AAGTAZtgiM0p4aew1vQyKHH_KQvLsNs1-MU")
 API_ID = int(os.environ.get("API_ID", "28015531"))
 API_HASH = os.environ.get("API_HASH", "2ab4ba37fd5d9ebf1353328fc915ad28")
 
 
-OWNER_ID = int(os.environ.get("OWNER_ID", "6121610691"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6336845466"))
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://haribotx:haribotx@cluster0.i3skil4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DB_NAME", "madflixbotz")
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001928670560"))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001908215366"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002193296931"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002031516368"))
 
 
-FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "3600")) # auto delete in seconds
+FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "600")) # auto delete in seconds
 
 
 PORT = os.environ.get("PORT", "8080")
@@ -29,7 +29,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 try:
     ADMINS=[6848088376]
-    for x in (os.environ.get("ADMINS", "6912994467").split()):
+    for x in (os.environ.get("ADMINS", "6336845466").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
